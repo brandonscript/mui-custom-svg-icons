@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "build": "npx @svgr/cli --typescript --memo --template ./templates/mui --out-dir dist -- icons"
+  },
+  "devDependencies": {
+    "@svgr/cli": "^6.2.1"
+  }
+}

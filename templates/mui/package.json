@@ -1,0 +1,9 @@
+{
+  "name": "mui.template",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "MUI icon template for SVGR",
+  "main": "mui.template.ts",
+  "author": "Brandon Shelley",
+  "license": "MIT"
+}
