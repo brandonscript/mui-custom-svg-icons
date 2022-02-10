@@ -1,5 +1,4 @@
-function muiTemplate(variables, { tpl }) {
-  
+function muiOutline2pxTemplate(variables, { tpl }) {
   // Change the svg container to MUI's SvgIcon
   variables.jsx.openingElement.name.name = "SvgIcon";
   variables.jsx.closingElement.name.name = "SvgIcon";
@@ -46,7 +45,21 @@ function muiTemplate(variables, { tpl }) {
     },
   });
 
+  if (
+    variables.jsx.children?.[0].children?.[0].openingElement.name.name ===
+      "style" &&
+    variables.jsx.children?.[0].children?.[0].children?.[0].expression?.value.length > 0
+  ) {
+    // Replace 'stroke-width:__px' with 'stroke-width:2px'
+    variables.jsx.children[0].children[0].children[0].expression.value =
+      variables.jsx.children[0].children[0].children[0].expression.value.replace(
+        /stroke-width:\s?[\d.]+px/g,
+        "stroke-width:2px"
+      );
+  }
+
   return tpl`
+// template: streamline-outline-2px
 import * as React from "react";
 import { SvgIcon, SvgIconProps } from "@mui/material";
 import { memo } from "react";
@@ -62,5 +75,4 @@ ${variables.exports};
 `;
 }
 
-
-module.exports = muiTemplate;
+module.exports = muiOutline2pxTemplate;

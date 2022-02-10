@@ -1,0 +1,8 @@
+{
+  "name": "svgr.mui.template",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Icon template for @SVGR MUI icon generator",
+  "main": "template.ts",
+  "license": "MIT"
+}

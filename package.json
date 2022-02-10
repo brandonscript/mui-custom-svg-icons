@@ -1,8 +1,10 @@
 {
   "scripts": {
-    "build": "npx @svgr/cli --typescript --memo --template ./templates/mui --out-dir dist -- icons"
+    "make:streamline-solid": "npx @svgr/cli --typescript --memo --template ./templates/streamline-solid --out-dir dist/solid -- icons/solid",
+    "make:streamline-outline-2px": "npx @svgr/cli --typescript --memo --template ./templates/streamline-outline-2px --out-dir dist/outline -- icons/outline"
   },
   "devDependencies": {
-    "@svgr/cli": "^6.2.1"
+    "@svgr/cli": "^6.2.1",
+    "@types/node": "^17.0.17"
   }
 }

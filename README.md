@@ -4,7 +4,7 @@ An icon generator for SVG icons (built on [@SVGR](https://react-svgr.com)) speci
 While this was primarily intended to work with [Streamline Icons](https://streamlinehq.com), it should work with any icon set – albeit you may want to adjust the template's padding.
 
 # Installation & dependencies
-In order to reliably build, you must have `Node` v17 and `npm` 8.4 running. 
+In order for this package to work, you must have `Node` v17 and `npm` 8.4 running. Other versions fail and I'll figure out how to fix them later.
 
 1. Clone the repo
 
