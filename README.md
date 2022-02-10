@@ -15,5 +15,4 @@ In order to reliably build, you must have `Node` v17 and `npm` 8.4 running.
 
 2. `yarn build`
 
-3. There is no step 3!
-
+3. Drop the `dist` folder into your MUI project (maybe rename it to `icons` or something sensible) and `import { IconName } from ./icons/`
