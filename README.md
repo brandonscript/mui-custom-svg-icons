@@ -6,6 +6,8 @@ While this was primarily intended to work with [Streamline Icons](https://stream
 # Installation & dependencies
 In order for this package to work, you must have `Node` v17 and `npm` 8.4 running. Other versions fail and I'll figure out how to fix them later.
 
+Currently only TypeScript icon files are generated, but you can tweak your make process to output .js files as well.
+
 1. Clone the repo
 
 2. `yarn install`
